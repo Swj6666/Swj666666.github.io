@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+  background: linear-gradient(#141e30,#243b55);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.h2{
+  font-size: 16px;
+  position: absolute;
+  top: 245px;
+  left: 13%;
+  user-select: none;  
+  color: #FFFFFF;
+}
+label{
+  user-select: none;
+}
+.checkbox{
+  position: relative;
+  top: -30px;
+  left: -48%;
+}
+.login{
+  display: flex;
+  position: relative;
+  top: -30%;
+  left: 20%;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 400px;
+  padding: 40px;
+}
+.login h2{
+  color: #fff;
+  margin-bottom: 30px;
+  margin-top: 3px;
+  user-select: none;
+  font-size:38px;
+}
+.login .login-box{
+  width: 100%;
+  position: relative;
+}
+.login .login-box input{
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  padding: 10px 0;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 16px;
+  user-select: none;
+}
+.login .login-box label{
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #fff;
+  transition: all 0.5s;
+}
+.login .login-box input:focus +label,
+.login .login-box input:valid +label{
+  top: -20px;
+  color: #03e9f4;
+  font-size: 12px;
+}
+.login button{
+  color: #03e9f4;
+  padding: 10px 20px;
+  position: relative;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.5s;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: none;
+  outline: none;
+  user-select: none;
+}
+.login button:hover{
+  color: #fff;
+  background-color: #353489;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,0 0 25px #03e9f4,0 0 50px #03e9f4,0 0 100px #03e9f4;
+}
+.login button:focus{
+  background-color: #3E3E90;
+}
+.login span{
+  position: absolute;
+}
+.login  span:first-child{
+  left: -100%;
+  top: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(transparent,#03e9f4);
+  animation: move1 1s linear infinite;
+}
+.login span:nth-child(2){
+  top: -100%;
+  right: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(transparent,#03e9f4);
+  animation: move2 1s linear 0.25s infinite;
+}
+.login  span:nth-child(3){
+  right: -100%;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+  background: linear-gradient(transparent,#03e9f4);
+  animation: move3 1s linear 0.5s infinite;
+}
+.login   span:last-child{
+  bottom: -100%;
+  left: 0;
+  height: 100%;
+  width: 2px;
+  background: linear-gradient(transparent,#03e9f4);
+  animation: move4 1s linear 0.75s infinite;
+}
+.wang{
+  outline: none;
+  text-decoration: none;
+  font-size: 16px;
+  position: absolute;
+  top: 67%;
+  left: 77%;
+  user-select: none;
+}
+.wang:hover{
+  text-decoration: solid;
+  cursor: pointer;
+}
+.m{
+  position: absolute;
+  top: 61%;
+  left: 8%;
+  color: red;
+}
+@keyframes move1{
+  0%{
+    left: -100%;
+  }
+  50%,100%{
+    left: 100%;
+  }
+}
+@keyframes move2{
+  0%{
+    top: -100%;
+  }
+  50%,100%{
+    top: 100%;
+  }
+}
+@keyframes move3{
+  0%{
+    right: -100%;
+  }
+  50%,100%{
+    right: 100%;
+  }
+}
+@keyframes move4{
+  0%{
+    bottom: -100%;
+  }
+  50%,100%{
+    bottom: 100%;
+  }
+}
